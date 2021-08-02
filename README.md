@@ -9,3 +9,6 @@ with jq:
 ```bash
 property=$(cat config.json | jq '.parameters | from_entries | .property')
 ```
+
+## Overview
+- https://wiki.ubuntuusers.de/Shell/Befehls%C3%BCbersicht/
