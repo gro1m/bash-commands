@@ -12,3 +12,12 @@ property=$(cat config.json | jq '.parameters | from_entries | .property')
 
 ## Overview
 - https://wiki.ubuntuusers.de/Shell/Befehls%C3%BCbersicht/
+
+## Perl Regexp
+https://www.perlmonks.org/?node_id=518444
+allows lookbehinds, so you do not need cut in grep commands after executing command.
+
+e.g.
+```bash
+grep -Po "(?<=UBUNTU_CODENAME=).*" /etc/os-release
+```
