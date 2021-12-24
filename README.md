@@ -21,3 +21,10 @@ e.g.
 ```bash
 grep -Po "(?<=UBUNTU_CODENAME=).*" /etc/os-release
 ```
+
+## for loops
+https://www.cyberciti.biz/faq/bash-for-loop/
+
+## bash functions
+https://linuxize.com/post/bash-functions/
+https://stackoverflow.com/a/16159057/9698518
