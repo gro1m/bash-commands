@@ -28,3 +28,6 @@ https://www.cyberciti.biz/faq/bash-for-loop/
 ## bash functions
 https://linuxize.com/post/bash-functions/
 https://stackoverflow.com/a/16159057/9698518
+
+## parameter expansion
+https://linuxhint.com/bash_parameter_expansion
