@@ -14,7 +14,7 @@ property=$(cat config.json | jq '.parameters | from_entries | .property')
 - https://wiki.ubuntuusers.de/Shell/Befehls%C3%BCbersicht/
 
 ## Perl Regexp
-https://www.perlmonks.org/?node_id=518444
+- https://www.perlmonks.org/?node_id=518444
 allows lookbehinds, so you do not need cut in grep commands after executing command.
 
 e.g.
@@ -23,11 +23,11 @@ grep -Po "(?<=UBUNTU_CODENAME=).*" /etc/os-release
 ```
 
 ## for loops
-https://www.cyberciti.biz/faq/bash-for-loop/
+- https://www.cyberciti.biz/faq/bash-for-loop/
 
 ## bash functions
-https://linuxize.com/post/bash-functions/
-https://stackoverflow.com/a/16159057/9698518
+- https://linuxize.com/post/bash-functions/
+- https://stackoverflow.com/a/16159057/9698518
 
 ## parameter expansion
-https://linuxhint.com/bash_parameter_expansion
+- https://linuxhint.com/bash_parameter_expansion
