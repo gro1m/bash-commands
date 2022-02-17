@@ -31,3 +31,13 @@ grep -Po "(?<=UBUNTU_CODENAME=).*" /etc/os-release
 
 ## parameter expansion
 - https://linuxhint.com/bash_parameter_expansion
+
+## tar GitLab artifact archive
+```shell
+# Downloads folder via wget using requests Certificate Authority BUNDLE and Gitlab Personal Access Token (PRIVATE_TOKEN) to retrieve the <dir>/<subdir1>/<subdir2> folder and strip it 3 levels deep so that only the contents of subdir2 remain in the current directory.
+wget --ca-certificate $REQUESTS_CA_BUNDLE -L --header "PRIVATE-TOKEN: $PRIVATE_TOKEN" "https://gitlab.com/api/v4/projects/<project id>/repository/archive.<format>?ref=<ref>&path=<subdir1>/<subdir2>" -qO - | tar -xzf - --strip-components=3
+```
+tar options:
+- `x` extract
+- `f` file
+- `z` for gunzip files (i.e. for unzipping the .gz)
